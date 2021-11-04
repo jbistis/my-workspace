@@ -2,7 +2,7 @@ import { SharedModule as pdlSharedModule } from './../../../../projects/my-lib/s
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { SharedModule } from '../../shared/shared.module';
+import { CoreModule } from '../../core/core.module';
 
 import { SettingsRoutingModule } from './settings-routing.module';
 import { SettingsContainerComponent } from './settings/settings-container.component';
@@ -16,7 +16,7 @@ import { SettingsContainerComponent } from './settings/settings-container.compon
   imports: [
     CommonModule, 
     SettingsRoutingModule,
-    SharedModule,
+    CoreModule,
     pdlSharedModule
   ]
 })

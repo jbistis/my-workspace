@@ -97,7 +97,7 @@ import { faMediumM, faGithub } from '@fortawesome/free-brands-svg-icons';
     FontAwesomeModule,
   ]
 })
-export class SharedModule {
+export class CoreModule {
   constructor(faIconLibrary: FaIconLibrary) {
     faIconLibrary.addIcons(
       faGithub,

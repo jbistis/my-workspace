@@ -1,6 +1,6 @@
 import { NgModule, ModuleWithProviders } from '@angular/core';
-// import { BrowserModule } from '@angular/platform-browser';
-// import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CommonModule } from '@angular/common';
 import {
   HttpClientModule,
@@ -33,7 +33,6 @@ import { environment } from '@environments/environment';
 // import { ENVIRONMENT_TOKEN } from './../environment-token';
 
 export const DependencyModules = [
-
   MaterialModule,
   GoogleChartsModule,
   NgxMatTimepickerModule,
@@ -52,15 +51,13 @@ export function httpLoaderFactory(http: HttpClient) {
   declarations: [
     ...Components,
   ],
-  providers: [
-    
-  ],
+  providers: [],
   imports: [
     ...DependencyModules,
     RouterModule,
     FormsModule,
-    // BrowserModule,
-    // BrowserAnimationsModule,
+    BrowserModule,
+    BrowserAnimationsModule,
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
@@ -95,12 +92,12 @@ export function httpLoaderFactory(http: HttpClient) {
     ...FormComponents
   ]
 })
+
 export class SharedModule {
   public static forRoot(): ModuleWithProviders {
     return {
       ngModule: SharedModule,
-      providers: [
-      ]
+      providers: []
     };
   }
 }

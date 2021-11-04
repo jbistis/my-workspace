@@ -52,7 +52,7 @@
         "src/app/features/*"
       ],
       "@shared/*": [
-        "src/app/shared/*"
+        "src/app/core/*"
       ],
       "@root/*": [
         "src/app/*"
