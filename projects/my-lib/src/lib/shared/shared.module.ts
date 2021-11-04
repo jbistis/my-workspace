@@ -1,6 +1,6 @@
 import { NgModule, ModuleWithProviders } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+// import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CommonModule } from '@angular/common';
 import {
   HttpClientModule,
@@ -57,7 +57,7 @@ export function httpLoaderFactory(http: HttpClient) {
     RouterModule,
     FormsModule,
     BrowserModule,
-    BrowserAnimationsModule,
+    // BrowserAnimationsModule,
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
