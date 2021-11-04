@@ -1,9 +1,24 @@
-/* To learn more about this file see: https://angular.io/config/tsconfig. */
 {
   "compileOnSave": false,
   "compilerOptions": {
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
+    "emitDecoratorMetadata": true,
+    // "strict": true,
+    // "strictNullChecks": true,
+    // "noImplicitAny": true,
+    // "strictPropertyInitialization": true,
+    // "strictFunctionTypes": true,
+    // "strictBindCallApply": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "types": [
+      "node"
+    ],
     "sourceMap": true,
     "declaration": false,
     "downlevelIteration": true,
@@ -15,6 +30,59 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    // "paths": {
+    //   "pdl": [
+    //     "dist/pdl/pdl",
+    //     "dist/pdl"
+    //   ],
+    //   "pd-types": [
+    //     "dist/pd-types/pd-types",
+    //     "dist/pd-types"
+    //   ]
+    // },
+    "paths": {
+      "@angular/*": [
+        "./node_modules/@angular/*"
+      ],
+      "@core/*": [
+        "src/app/core/*"
+      ],
+      "@features/*": [
+        "src/app/features/*"
+      ],
+      "@shared/*": [
+        "src/app/shared/*"
+      ],
+      "@root/*": [
+        "src/app/*"
+      ],
+      "@environments/*": [
+        "src/environments/*"
+      ],
+      "~environments/*": [
+        "src/environments/*"
+      ],
+      "@assets/*": [
+        "src/assets/*"
+      ],
+      "pdl": [
+        "projects/pdl/src/public-api"
+      ],
+      "pdl/*": [
+        "projects/pdl/src/lib/*"
+      ],
+      "pd-types": [
+        "projects/pd-types/src/public-api"
+      ],
+      "pd-types/*": [
+        "projects/pd-types/src/lib/*"
+      ]
+    }
+  },
+  "angularCompilerOptions": {
+    "strictTemplates": true,
+    "fullTemplateTypeCheck": true,
+    "strictInjectionParameters": true
   }
 }
